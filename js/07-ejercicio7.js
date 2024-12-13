@@ -7,3 +7,22 @@
 // 333
 // 22
 // 1
+
+let entrada = parseInt(prompt("Ingrese un numero entre 1 y 50"));
+
+if (entrada > 0 && entrada <=50) {
+    
+    for (let i = entrada; i >= 1 ; i--) {
+        let numero = "";
+
+        for (let piramide = 0; piramide < i; piramide--) {
+            numero += i;
+            
+        }
+        document.write(numero);
+        document.write("<br>");
+    }
+
+} else{
+    alert("Ingrese un numero valido")
+}
